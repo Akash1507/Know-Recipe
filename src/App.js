@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import KEY from "./keys";
+import Recipes from "./components/Recipes";
 class App extends Component {
   state = {
     recipes: [],
@@ -31,14 +32,7 @@ class App extends Component {
           <h1 className="App-title">Know Your Recipe</h1>
         </header>
         <Form getRecipe={this.getRecipe} />
-        {this.state.recipes.map(recipe => {
-          return (
-            <div key={recipe.id}>
-              <img src={recipe.imageUrl} alt={recipe.title} />
-              <p>{recipe.title}</p>
-            </div>
-          );
-        })}
+        <Recipes recipes={this.state.recipes} />
       </div>
     );
   }
