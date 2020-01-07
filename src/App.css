@@ -108,52 +108,60 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #2c3e50 !important;
 }
 
-/******** RECIPE.js ********/
-
-.active-recipe {
-  margin: 0 auto;
-  width: 60%;
+.lib-panel {
+  margin-bottom: 20px;
+}
+.lib-panel img {
+  object-fit: cover;
+  width: 100%;
+  background-color: transparent;
 }
 
-.active-recipe__img {
-  height: 500px !important;
+.lib-panel .row,
+.lib-panel .col-md-6 {
+  padding: 0;
+  background-color: #ffffff;
 }
 
-.active-recipe__title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 1rem 0;
+.lib-panel .lib-row {
+  padding: 0 20px 0 20px;
 }
 
-.active-recipe__publisher,
-.active-recipe__website {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+.lib-panel .lib-row.lib-header {
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 0 20px;
 }
 
-.active-recipe__publisher span {
-  text-transform: none;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-left: 5px;
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+  height: 2px;
+  width: 26px;
+  background-color: #d9d9d9;
+  margin: 7px 0 7px 0;
 }
 
-.active-recipe__website span {
-  text-transform: lowercase;
-  font-weight: 300;
-  letter-spacing: 2px;
-  color: #e74c3c;
-  margin-left: 10px;
+.lib-panel .lib-row.lib-desc {
+  position: relative;
+  height: 100%;
+  display: block;
+  font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 20px;
 }
 
-.active-recipe__button {
-  border: solid 2px #e74c3c;
-  background: transparent;
-  padding: 0.2rem 0.9rem;
-  margin: 0 0.2rem;
-  border-radius: 1px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 500;
+.row-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.no-padding {
+  padding: 0;
 }
